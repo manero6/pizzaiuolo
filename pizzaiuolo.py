@@ -40,6 +40,6 @@ def pizzaiuolo(panetto, tot_panetti, idratazione, sale_perc, lievito_perc):
 
 pizzaiuolo(int(input("Per un panetto da quanti grammi (default: 250)? ") or "250"),\
            int(input("Quanti panetti in totale (default: 4)? ") or "4"),\
-           int(input("Quale idratazione in % (default: 65)?") or "65"),\
+           int(input("Quale idratazione in % (default: 65)? ") or "65"),\
            int(input("Quanto sale in % (default: 3)? ") or "3"),\
            int(input("Quanto lievito in % (default: 3)? ") or "3"))
