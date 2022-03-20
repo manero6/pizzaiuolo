@@ -35,8 +35,8 @@ def pizzaiuolo(panetto, tot_panetti, idratazione, sale_perc, lievito_perc):
     print("| Farina per completarlo: \033[4;37m{:.1f}\033[0;0mg".format(post_poolish))
     print("+---- \033[1;31mPizz\033[1;37mai\033[1;32muolo\033[0;0m ----+\n")
 
-pizzaiuolo(int(input("Per un panetto da quanti grammi? ")),\
-           int(input("Quanti panetti in totale? ")),\
-           int(input("Quale idratazione in % (default 65%)?") or "65"),\
-           int(input("Quanto sale in % (default 3%)? ") or "3"),\
-           int(input("Quanto lievito in % (default 3%)? ") or "3"))
+pizzaiuolo(int(input("Per un panetto da quanti grammi (default: 250)? ") or "250"),\
+           int(input("Quanti panetti in totale (default: 4)? ") or "4"),\
+           int(input("Quale idratazione in % (default: 65)?") or "65"),\
+           int(input("Quanto sale in % (default: 3)? ") or "3"),\
+           int(input("Quanto lievito in % (default: 3)? ") or "3"))
