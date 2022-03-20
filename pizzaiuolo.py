@@ -17,7 +17,7 @@ def pizzaiuolo(panetto, tot_panetti, idratazione, sale_perc, lievito_perc):
     txt_reset = "\033[0;0m"
     txt_pizzaiuolo = "\033[1;31mPizz\033[1;37mai\033[1;32muolo\033[0;0m"
     print("\n+---- {} ----+".format(txt_pizzaiuolo))
-    print("| Panetto da: {}{}{}".format(txt_result, panetto, txt_reset))
+    print("| Panetto da: {}{}{}g".format(txt_result, panetto, txt_reset))
     print("| Totale panetti: {}{}{}".format(txt_result, tot_panetti, txt_reset))
     print("| Impasto finale: {}{:.1f}{}g".format(txt_result, impasto, txt_reset))
     print("| Farina totale: {}{:.1f}{}g".format(txt_result, farina, txt_reset))
