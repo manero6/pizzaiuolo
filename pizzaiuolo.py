@@ -13,27 +13,30 @@ def pizzaiuolo(panetto, tot_panetti, idratazione, sale_perc, lievito_perc):
     post_biga55 = unpercento * (idratazione - 55)
     poolish = acqua
     post_poolish = farina - acqua
-    print("\n+---- \033[1;31mPizz\033[1;37mai\033[1;32muolo\033[0;0m ----+")
-    print("| Panetto da: \033[4;37m{}\033[0;0mg".format(panetto))
-    print("| Totale panetti: \033[4;37m{}\033[0;0m".format(tot_panetti))
-    print("| Impasto finale: \033[4;37m{:.1f}\033[0;0mg".format(impasto))
-    print("| Farina totale: \033[4;37m{:.1f}\033[0;0mg".format(farina))
-    print("| Acqua totale ({}% idrat.): \033[4;37m{:.1f}\033[0;0mml".format(idratazione, acqua))
-    print("| {}% di sale: \033[4;37m{:.1f}\033[0;0mg".format(sale_perc, sale))
-    print("| {}% di lievito: \033[4;37m{:.1f}\033[0;0mg".format(lievito_perc, lievito))
+    txt_result = "\033[4;37m" 
+    txt_reset = "\033[0;0m"
+    txt_pizzaiuolo = "\033[1;31mPizz\033[1;37mai\033[1;32muolo\033[0;0m"
+    print("\n+---- {} ----+".format(txt_pizzaiuolo))
+    print("| Panetto da: {}{}{}".format(txt_result, panetto, txt_reset))
+    print("| Totale panetti: {}{}{}".format(txt_result, tot_panetti, txt_reset))
+    print("| Impasto finale: {}{:.1f}{}g".format(txt_result, impasto, txt_reset))
+    print("| Farina totale: {}{:.1f}{}g".format(txt_result, farina, txt_reset))
+    print("| Acqua totale ({}% idrat.): {}{:.1f}{}ml".format(idratazione, txt_result, acqua, txt_reset))
+    print("| {}% di sale: {}{:.1f}{}g".format(sale_perc, txt_result, sale, txt_reset))
+    print("| {}% di lievito: {}{:.1f}{}g".format(lievito_perc, txt_result, lievito, txt_reset))
     print("+---- Biga al 45% ----+")
-    print("| Acqua per la biga al 45%: \033[4;37m{:.1f}\033[0;0mml".format(biga45))
-    print("| Acqua per completarla: \033[4;37m{:.1f}\033[0;0mml".format(post_biga45))
+    print("| Acqua per la biga al 45%: {}{:.1f}{}ml".format(txt_result, biga45, txt_reset))
+    print("| Acqua per completarla: {}{:.1f}{}ml".format(txt_result, post_biga45, txt_reset))
     print("+---- Biga al 50% ----+")
-    print("| Acqua per la biga al 50%: \033[4;37m{:.1f}\033[0;0mml".format(biga50))
-    print("| Acqua per completarla: \033[4;37m{:.1f}\033[0;0mml".format(post_biga50))
+    print("| Acqua per la biga al 50%: {}{:.1f}{}ml".format(txt_result, biga50, txt_reset))
+    print("| Acqua per completarla: {}{:.1f}{}ml".format(txt_result, post_biga50, txt_reset))
     print("+---- Biga al 55% ----+")
-    print("| Acqua per la biga al 55%: \033[4;37m{:.1f}\033[0;0mml".format(biga55))
-    print("| Acqua per completarla: \033[4;37m{:.1f}\033[0;0mml".format(post_biga55))
+    print("| Acqua per la biga al 55%: {}{:.1f}{}ml".format(txt_result, biga55, txt_reset))
+    print("| Acqua per completarla: {}{:.1f}{}ml".format(txt_result, post_biga55, txt_reset))
     print("+---- Poolish al 100% ----+")
-    print("| Farina per il poolish: \033[4;37m{:.1f}\033[0;0mg".format(poolish))
-    print("| Farina per completarlo: \033[4;37m{:.1f}\033[0;0mg".format(post_poolish))
-    print("+---- \033[1;31mPizz\033[1;37mai\033[1;32muolo\033[0;0m ----+\n")
+    print("| Farina per il poolish: {}{:.1f}{}g".format(txt_result, poolish, txt_reset))
+    print("| Farina per completarlo: {}{:.1f}{}g".format(txt_result, post_poolish, txt_reset))
+    print("+---- {} ----+\n".format(txt_pizzaiuolo))
 
 pizzaiuolo(int(input("Per un panetto da quanti grammi (default: 250)? ") or "250"),\
            int(input("Quanti panetti in totale (default: 4)? ") or "4"),\
