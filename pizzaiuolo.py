@@ -25,7 +25,7 @@ def pizzaiuolo(panetto, tot_panetti, idratazione, sale_perc, lievito_perc):
     print("| Acqua totale ({}% idrat.): {}{:.1f}{}ml".format(idratazione, txt_result, acqua, txt_reset))
     print("| {}% di sale: {}{:.1f}{}g".format(sale_perc, txt_result, sale, txt_reset))
     print("| {}% di lievito fresco: {}{:.1f}{}g".format(lievito_perc, txt_result, lievito, txt_reset))
-    print("| 1/3 del lievito: {:.1f}g".format(lievito_secco))
+    print("| 1/3 del lievito: {}{:.1f}{}g".format(txt_result, lievito_secco, txt_reset))
     print("+----> Biga al 45% <----+")
     print("| Acqua per la biga al 45%: {}{:.1f}{}ml".format(txt_result, biga45, txt_reset))
     print("| Acqua per completarla: {}{:.1f}{}ml".format(txt_result, post_biga45, txt_reset))
