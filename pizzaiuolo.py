@@ -47,6 +47,17 @@ def pizzaiuolo(panetto, tot_panetti, idratazione, sale_perc, lievito_perc):
     print("+----> {} <----+".format(txt_pizzaiuolo))
     print()
 
+#thanks figlet ;)
+print("\033[0;31m                   \033[0;37m         \033[0;32m             _       \033[0;0m")
+print("\033[0;31m      o            \033[0;37m      o  \033[0;32m            | |      \033[0;0m")
+print("\033[0;31m   _      __   __  \033[0;37m __,     \033[0;32m        __  | |  __  \033[0;0m")
+print("\033[0;31m |/ \_|  / / _/ / _\033[0;37m/  |  |  \033[0;32m|   |  /  \_|/  /  \_\033[0;0m")
+print("\033[0;31m |__/ |_/ /_/  /_/ \033[0;37m\_/|_/|_/\033[0;32m \_/|_/\__/ |__/\__/ \033[0;0m")
+print("\033[0;31m/|         /|   /| \033[0;37m         \033[0;32m                     \033[0;0m")
+print("\033[0;31m\|         \|   \| \033[0;37m         \033[0;32m                     \033[0;0m")
+print()
+ 
+
 pizzaiuolo(int(input("Per un panetto da quanti grammi (default: 250)? ") or "250"),\
            int(input("Quanti panetti in totale (default: 4)? ") or "4"),\
            int(input("Quale % di idratazione (default: 65)? ") or "65"),\
