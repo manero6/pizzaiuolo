@@ -17,8 +17,8 @@ def pizzaiuolo(panetto, tot_panetti, idratazione, sale_perc, lievito_perc):
     post_poolish = farina - acqua
     # started from here: (100/5)+(60/3)+(100*4/5)+(60*2/3)
     biga_poolish_poolish = unpercento * (idratazione - 50) * 2
-    biga_poolish_biga = unpercento * (100 - idratazione)
-    biga_poolish_biga_acqua = unpercento * (100 - idratazione) * 2
+    biga_poolish_biga = unpercento * (100 - idratazione) * 2
+    biga_poolish_biga_acqua = unpercento * (100 - idratazione)
     txt_result = "\033[4;37m"
     txt_reset = "\033[0;0m"
     txt_pizzaiuolo = "\033[1;31mPizz\033[1;37mai\033[1;32muolo\033[0;0m"
