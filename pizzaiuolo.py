@@ -39,7 +39,7 @@ def pizzaiuolo(panetto, tot_panetti, idratazione, sale_perc, lievito_perc):
     #print("| Acqua da aggiungere: {}{:.1f}{}ml".format(txt_result, post_biga45, txt_reset))
     #print("|")
     print("+----> Biga al 50% <----+")
-    print("| Acqua per la biga al 50%: {}{:.1f}{}ml".format(txt_result, biga50, txt_reset))
+    print("| Acqua per la biga: {}{:.1f}{}ml".format(txt_result, biga50, txt_reset))
     print("| Acqua da aggiungere: {}{:.1f}{}ml".format(txt_result, post_biga50, txt_reset))
     print("|")
     #print("+----> Biga al 55% <----+")
