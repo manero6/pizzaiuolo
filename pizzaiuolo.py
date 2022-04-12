@@ -20,7 +20,8 @@ def pizzaiuolo(panetto, tot_panetti, idratazione, sale_perc, lievito_perc):
     biga_poolish_poolish = unpercento * (idratazione - 50) * 2
     biga_poolish_biga = unpercento * (100 - idratazione) * 2
     biga_poolish_biga_acqua = unpercento * (100 - idratazione)
-    farina_perc = 100, 95, 90, 85, 80, 75, 70, 66, 60, 50, 40, 33, 30, 25, 20, 15, 10, 5, 1
+    #farina_perc = 100, 95, 90, 85, 80, 75, 70, 66, 60, 50, 40, 33, 30, 25, 20, 15, 10, 5, 1
+    farina_perc = 99, 98, 95, 90, 85, 80, 75, 70, 66, 60, 50
     txt_result = "\033[4;37m"
     txt_reset = "\033[0;0m"
     txt_pizzaiuolo = "\033[1;31mPizz\033[1;37mai\033[1;32muolo\033[0;0m"
@@ -62,8 +63,11 @@ def pizzaiuolo(panetto, tot_panetti, idratazione, sale_perc, lievito_perc):
     print("|")
     print("+----> Farina in % <----+")
     for perc in farina_perc:
-        calcolo_perc = farina *perc / 100
-        print("| {:>3}%: {}{:.1f}{}".format(perc, txt_result, calcolo_perc, txt_reset))
+        calcolo_perc = farina * perc / 100
+        print("| {:>3}%: {}{:.1f}{}".format(perc, txt_result, calcolo_perc, txt_reset), end=" ")
+        perc = 100 - perc
+        calcolo_perc = farina * perc / 100
+        print("    {:>3}%: {}{:.1f}{}".format(perc, txt_result, calcolo_perc, txt_reset))
     print("|")
     print("+----> {} <----+".format(txt_pizzaiuolo))
     print()
