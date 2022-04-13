@@ -61,10 +61,15 @@ def pizzaiuolo(panetto, tot_panetti, idratazione, sale_perc, lievito_perc):
     print("| Farina per la biga: {}{:.1f}{}g".format(txt_result, biga_poolish_biga, txt_reset))
     print("| Acqua per la biga: {}{:.1f}{}g".format(txt_result, biga_poolish_biga_acqua, txt_reset))
     print("|")
-    print("+----> Farina in % <----+")
+    print("+----> Farina in % in grammi <----+")
     for perc in farina_perc:
         calcolo_perc = farina * perc / 100
         print("| {:>3}%: {}{:.1f}{}".format(perc, txt_result, calcolo_perc, txt_reset), end=" ")
+        if perc == 50:
+            perc = 100
+            calcolo_perc = farina
+            print("    {:>3}%: {}{:.1f}{}".format(perc, txt_result, calcolo_perc, txt_reset))
+            break
         perc = 100 - perc
         calcolo_perc = farina * perc / 100
         print("    {:>3}%: {}{:.1f}{}".format(perc, txt_result, calcolo_perc, txt_reset))
