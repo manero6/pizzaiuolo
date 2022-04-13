@@ -90,5 +90,5 @@ print()
 pizzaiuolo(int(input("Per un panetto da quanti grammi (default: 250)? ") or "250"),
            int(input("Quanti panetti in totale (default: 4)? ") or "4"),
            int(input("Quale % di idratazione (default: 65)? ") or "65"),
-           int(input("Quale % di sale sulla farina (default: 3)? ") or "3"),
+           float(input("Quale % di sale sulla farina (default: 3)? ") or "3"),
            float(input("Quale % di lievito sulla farina (default: 0.5)? ") or "0.5"))
