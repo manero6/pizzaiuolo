@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 def pizzaiuolo(panetto, tot_panetti, idratazione, sale_perc, lievito_perc):
     unpercento = panetto * tot_panetti / (idratazione + 100 + sale_perc + lievito_perc)
     farina = unpercento * 100
